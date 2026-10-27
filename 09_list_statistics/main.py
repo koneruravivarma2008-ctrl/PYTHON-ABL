@@ -1,18 +1,33 @@
 # Program 9: List Operations and Statistics
+# Topics: input/output, type conversion, lists, for loop, conditions
 
-values = input("Enter integers separated by spaces: ").split()
+count = int(input("How many numbers do you want to enter? "))
 numbers = []
 
-for value in values:
-    numbers.append(int(value))
-
-if len(numbers) == 0:
-    print("No numbers entered")
+if count <= 0:
+    print("Please enter a positive count")
 else:
-    total = sum(numbers)
-    average = total / len(numbers)
+    for i in range(count):
+        value = int(input("Enter a number: "))
+        numbers.append(value)
+
+    total = 0
+    smallest = numbers[0]
+    largest = numbers[0]
+
+    for value in numbers:
+        total = total + value
+
+        if value < smallest:
+            smallest = value
+
+        if value > largest:
+            largest = value
+
+    average = total / count
+
     print("List:", numbers)
     print("Sum:", total)
-    print("Average:", round(average, 2))
-    print("Minimum:", min(numbers))
-    print("Maximum:", max(numbers))
+    print("Average:", average)
+    print("Minimum:", smallest)
+    print("Maximum:", largest)
