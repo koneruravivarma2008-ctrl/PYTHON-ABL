@@ -1,6 +1,6 @@
 # Test Cases — Python ABL Projects
 
-Use these test cases to check each program. Expected outputs below are based on the program logic; run the programs yourself to confirm and capture actual output screenshots before submission.
+Run these cases against the source code in each project folder. Expected results below are derived from the current code; capture actual terminal output after running each program.
 
 ## 1. Simple Calculator
 | # | Inputs (first, second, operator) | Expected result |
@@ -34,9 +34,9 @@ Use these test cases to check each program. Expected outputs below are based on 
 ## 4. Multiplication Table Generator
 | # | Input | Expected result |
 |---|---:|---|
-| 1 | 5 | Lines from `5 x 1 = 5` through `5 x 10 = 50` |
+| 1 | 5 | From `5 x 1 = 5` through `5 x 10 = 50` |
 | 2 | 0 | Ten lines with product 0 |
-| 3 | -3 | Lines from `-3 x 1 = -3` through `-3 x 10 = -30` |
+| 3 | -3 | From `-3 x 1 = -3` through `-3 x 10 = -30` |
 
 ## 5. Factorial of a Number
 | # | Input | Expected result |
@@ -53,7 +53,7 @@ Use these test cases to check each program. Expected outputs below are based on 
 | 2 | `nurses run` | `It is a palindrome` |
 | 3 | `python` | `It is not a palindrome` |
 | 4 | `Madam` | `It is a palindrome` |
-| 5 | `A man, a plan, a canal: Panama` | `It is not a palindrome` (punctuation is not removed by this program) |
+| 5 | `A man, a plan, a canal: Panama` | `It is not a palindrome` because punctuation is retained |
 
 ## 7. Vowel and Consonant Counter
 | # | Input | Expected result |
@@ -64,39 +64,35 @@ Use these test cases to check each program. Expected outputs below are based on 
 | 4 | `123 !?` | Vowels: 0; Consonants: 0 |
 | 5 | Empty line | Vowels: 0; Consonants: 0 |
 
-## 8. Star Pattern Generator
-The exact pattern depends on the prompts and implementation in `08_star_pattern/main.py`. Run the program and verify its displayed pattern for the requested row count. Include at least:
-- Minimum supported row count.
-- A typical row count such as 5.
-- A larger row count such as 8.
-- Any invalid input handling, if implemented.
+## 8. Right-Angled Star Pattern
+| # | Input rows | Expected result |
+|---|---:|---|
+| 1 | 1 | One line: `*` |
+| 2 | 3 | Lines: `*`, `**`, `***` |
+| 3 | 5 | Five lines, one through five stars |
+| 4 | 0 | `Enter a positive number of rows` |
+| 5 | -2 | `Enter a positive number of rows` |
 
 ## 9. List Operations and Statistics
-The exact prompts and calculations depend on `09_list_statistics/main.py`. Test with:
-- A list containing positive integers, such as `4, 2, 8, 6`.
-- A list containing duplicate values, such as `3, 3, 1, 5`.
-- A list containing negative and positive values, such as `-2, 0, 7`.
-- The smallest valid list size and any empty-list/invalid-input handling, if implemented.
-
-Check the displayed list, sorted order, minimum, maximum, sum, and average where those operations are provided.
+| # | Input integers (space-separated) | Expected result |
+|---|---|---|
+| 1 | `4 2 8 6` | List: [4, 2, 8, 6]; Sum: 20; Average: 5.0; Minimum: 2; Maximum: 8 |
+| 2 | `3 3 1 5` | List: [3, 3, 1, 5]; Sum: 12; Average: 3.0; Minimum: 1; Maximum: 5 |
+| 3 | `-2 0 7` | Sum: 5; Average: 1.67; Minimum: -2; Maximum: 7 |
+| 4 | Empty line | `No numbers entered` |
 
 ## 10. Tuple and Set Operations
-The exact prompts and values depend on `10_tuple_set_operations/main.py`. Test with:
-- Tuples containing distinct values.
-- Tuples with repeated values.
-- Two sets with overlapping elements, such as A = {1, 2, 3} and B = {3, 4, 5}.
-- Two disjoint sets.
-- Membership tests for an item that is present and one that is absent.
+The tuple is fixed in the program as `('Ravi', 18, 'CSE')`. For each set test, enter the two sets and then the search value.
 
-Check the tuple output and set union, intersection, difference, and membership operations where provided.
+| # | Set A | Set B | Search value | Expected result |
+|---|---|---|---:|---|
+| 1 | `1 2 3` | `3 4 5` | 2 | Union contains 1,2,3,4,5; intersection contains 3; A - B contains 1,2; Present in A: True |
+| 2 | `1 2` | `4 5` | 9 | Union contains 1,2,4,5; intersection is empty; A - B contains 1,2; Present in A: False |
+| 3 | `1 1 2` | `2 2 3` | 3 | Duplicates collapse in sets; union contains 1,2,3; intersection contains 2; Present in A: False |
+
+**Note:** Python may display set elements in a different order. Compare set membership, not the printed ordering.
 
 ## Screenshot checklist
-For each of the 10 programs:
-1. Open a terminal in the corresponding project folder.
-2. Run `python main.py` (or `python3 main.py`).
-3. Enter one of the test cases above.
-4. Capture the actual terminal showing the program name, input, and output.
-5. Save screenshots with clear names, for example `01_calculator_test1.png`.
-6. Do not use mock or edited output as proof of execution; screenshots should show real runs.
+For every program, run `python main.py` (or `python3 main.py`) in its project folder and capture the real terminal showing the input and output. Use names such as `01_calculator_test1.png`. Do not present fabricated or edited output as proof of execution.
 
-**Note:** This file lists test cases and expected results. It does not claim that every test has already been executed or screenshot-captured.
+This document lists test cases and expected results; it does not claim that all cases have already been executed or that screenshots have been captured.
