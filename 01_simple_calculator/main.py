@@ -1,5 +1,5 @@
 # Program 1: Simple Calculator
-# Syllabus: input/output, type conversion, arithmetic operators, if-elif-else
+# Topics: input/output, type conversion, arithmetic operators, if-elif-else
 
 a = float(input("Enter first number: "))
 b = float(input("Enter second number: "))
