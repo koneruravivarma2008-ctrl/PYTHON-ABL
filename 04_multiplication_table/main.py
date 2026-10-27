@@ -1,6 +1,8 @@
 # Program 4: Multiplication Table Generator
+# Topics: input/output, type conversion, for loop, arithmetic operators
 
 number = int(input("Enter a number: "))
 
 for i in range(1, 11):
-    print(f"{number} x {i} = {number * i}")
+    result = number * i
+    print(number, "x", i, "=", result)
