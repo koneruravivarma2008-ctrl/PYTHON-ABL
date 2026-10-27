@@ -77,6 +77,11 @@ On some systems, use `python3 main.py`.
 - Branch: YOUR BRANCH
 - Section: YOUR SECTION
 
+## Testing and verification
+
+- See [TEST_CASES.md](TEST_CASES.md) for test inputs and expected results for all 10 programs.
+- See [UPLOAD_VERIFICATION.md](UPLOAD_VERIFICATION.md) for the repository file verification checklist.
+
 ## Submission reminders
 
 - Confirm that the selected topics match the faculty's approved list of 100 case studies.
