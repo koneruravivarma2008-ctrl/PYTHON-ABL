@@ -81,10 +81,11 @@ On some systems, use `python3 main.py`.
 
 - See [TEST_CASES.md](TEST_CASES.md) for test inputs and expected results for all 10 programs.
 - See [UPLOAD_VERIFICATION.md](UPLOAD_VERIFICATION.md) for the repository file verification checklist.
+- See [EXECUTION_REPORT.md](EXECUTION_REPORT.md) for the 30 executed test runs and links to the 10 per-project output screenshots.
 
 ## Submission reminders
 
 - Confirm that the selected topics match the faculty's approved list of 100 case studies.
-- Run each program yourself and capture real output screenshots.
+- The repository includes terminal-style screenshots rendered from captured program output; if your faculty requires desktop screenshots, capture them locally as described in [EXECUTION_REPORT.md](EXECUTION_REPORT.md).
 - Add any required drawn flowcharts and the consolidated PDF report.
 - Replace the placeholder student details before submission.
