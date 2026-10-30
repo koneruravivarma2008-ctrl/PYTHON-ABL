@@ -83,6 +83,21 @@ On some systems, use `python3 main.py`.
 - See [UPLOAD_VERIFICATION.md](UPLOAD_VERIFICATION.md) for the repository file verification checklist.
 - See [EXECUTION_REPORT.md](EXECUTION_REPORT.md) for the 30 executed test runs and links to the 10 per-project output screenshots.
 
+## Flowcharts
+
+Each program now has a Mermaid flowchart in its project folder. GitHub renders these diagrams directly in the files:
+
+1. [Simple Calculator](01_simple_calculator/flowchart.md)
+2. [Student Grade Calculator](02_student_grade_calculator/flowchart.md)
+3. [Leap Year Checker](03_leap_year_checker/flowchart.md)
+4. [Multiplication Table](04_multiplication_table/flowchart.md)
+5. [Factorial](05_factorial/flowchart.md)
+6. [Palindrome Checker](06_palindrome_checker/flowchart.md)
+7. [Vowel and Consonant Counter](07_vowel_consonant_counter/flowchart.md)
+8. [Star Pattern](08_star_pattern/flowchart.md)
+9. [List Statistics](09_list_statistics/flowchart.md)
+10. [Tuple and Set Operations](10_tuple_set_operations/flowchart.md)
+
 ## Submission reminders
 
 - Confirm that the selected topics match the faculty's approved list of 100 case studies.
